@@ -1,5 +1,5 @@
 ---
-layout: foo
+#layout: foo
 title: Test-Titel
 ---
 
