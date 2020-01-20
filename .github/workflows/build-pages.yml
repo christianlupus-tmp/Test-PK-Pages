@@ -1,2 +1,11 @@
-- name: jekyll-deploy-gh-pages
-  uses: BryanSchuetz/jekyll-deploy-gh-pages@v2.0
+name: Publish to pages
+on: [push]
+
+jobs:
+  build:
+      name: jekyll-deploy-gh-pages
+      runs-on: [ubuntu-latest]
+      steps:
+        - name: jekyll-deploy-gh-pages
+          uses: BryanSchuetz/jekyll-deploy-gh-pages@v2.0
+      
