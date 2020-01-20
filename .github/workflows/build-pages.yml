@@ -6,7 +6,8 @@ jobs:
       name: jekyll-deploy-gh-pages
       runs-on: [ubuntu-latest]
       steps:
-        - uses: actions/checkout
+        - name: Checkout
+          uses: actions/checkout@v2.0.0
         - name: jekyll-deploy-gh-pages
           uses: BryanSchuetz/jekyll-deploy-gh-pages@v2.0
           env:
