@@ -11,6 +11,8 @@ jobs:
       steps:
         - name: Checkout
           uses: actions/checkout@v2.0.0
+          with:
+            ref: master
         - name: jekyll-deploy-gh-pages
           uses: BryanSchuetz/jekyll-deploy-gh-pages@v2.0
           env:
